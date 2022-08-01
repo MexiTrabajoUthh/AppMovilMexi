@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.miguel.mexiproyect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/miicono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/miicono_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MexiProyect"
+        tools:targetApi="31">
+        <activity
+            android:name=".MiVacOffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaVacOffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiVacanteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaMisVacantesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VacanteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaVacatesCercaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PruebaSolicitudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SolicitudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaSolicitudesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostulacionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaPostulacionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuTrabajActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuEmplActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

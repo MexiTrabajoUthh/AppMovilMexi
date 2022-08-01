@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="309dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/ivInfoS"
+                android:layout_width="48dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="12dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"
+                app:layout_constraintStart_toEndOf="@+id/txtNombreS"
+                app:layout_constraintTop_toTopOf="@+id/imageView8"
+                app:srcCompat="@drawable/info" />
+
+            <TextView
+                android:id="@+id/txtNombreS"
+                android:layout_width="224dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Nombre del Solicitante"
+                android:textColor="#656565"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+            <TextView
+                android:id="@+id/txtDireccS"
+                android:layout_width="208dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Direccion"
+                android:textColor="#656565"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNombreS"
+                app:layout_constraintStart_toStartOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreS" />
+
+            <TextView
+                android:id="@+id/txtIdS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#F5F5F5"
+                app:layout_constraintEnd_toEndOf="@+id/ivInfoS"
+                app:layout_constraintStart_toStartOf="@+id/ivInfoS"
+                app:layout_constraintTop_toBottomOf="@+id/ivInfoS" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

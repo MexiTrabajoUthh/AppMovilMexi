@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-99dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="309dp"
+                android:layout_height="136dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/txtNombreP"
+                android:layout_width="224dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Nombre del Postulante"
+                android:textColor="#656565"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/txtDirecc"
+                android:layout_width="208dp"
+                android:layout_height="71dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Dirección"
+                android:textColor="#656565"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/txtNombreP"
+                app:layout_constraintStart_toStartOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreP" />
+
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="48dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/txtNombreP"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                app:srcCompat="@drawable/info" />
+
+            <TextView
+                android:id="@+id/txtIdP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#F5F5F5"
+                app:layout_constraintEnd_toEndOf="@+id/ivInfo"
+                app:layout_constraintStart_toStartOf="@+id/ivInfo"
+                app:layout_constraintTop_toBottomOf="@+id/ivInfo" />
+
+            <Button
+                android:id="@+id/btnClase"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:backgroundTint="#F5F5F5"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Excelente"
+                android:textAllCaps="false"
+                android:textColor="#F5F5F5"
+                android:textSize="9sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/txtIdP"
+                app:layout_constraintStart_toStartOf="@+id/txtIdP"
+                app:layout_constraintTop_toBottomOf="@+id/txtIdP" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
